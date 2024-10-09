@@ -35,7 +35,7 @@ helm install falco falcosecurity/falco --namespace falco \
 
 Let's try this as a ```helm upgrade```:
 ```
-helm install falco falcosecurity/falco --namespace falco \
+helm upgrade falco falcosecurity/falco --namespace falco \
    --create-namespace \
    --set tty=true \
    --set driver.kind=modern_ebpf \
